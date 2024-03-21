@@ -7,9 +7,11 @@
       }
     ],
     "routes": [
-      {
-        "src": "/routes/(.*)",
-        "dest": "index.js"
-      }
+        { "src": "/api/signup", "dest": "src/routes/signup.js" },
+        { "src": "/api/login", "dest": "src/routes/login.js" },
+        { "src": "/api/getUsers", "dest": "src/routes/getUsers.js" },
+        { "src": "/api/profile", "dest": "src/routes/getSingleUser.js" },
+        { "src": "/api/transfer", "dest": "src/routes/transfer.js" },
+        { "src": "/api/*", "dest": "src/index.js" }
     ]
   }
